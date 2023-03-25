@@ -72,6 +72,7 @@ Projede kullanılan dağıtımlar, eklentiler vb.:
 * Certbot-apache
 * UFW
 * rsync
+* Docker
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
