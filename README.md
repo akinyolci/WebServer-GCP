@@ -80,6 +80,7 @@ Projede kullanılan dağıtımlar, eklentiler vb.:
 <h2 id="yol-haritasi"> :dart: Yol Haritası</h2>
 
 <h3 id="vm-kurma" align="justify"> GCP'de Sanal Makine Kurulumu <h3/>
+  <p>Google Cloud ortamında Linux işletim sistemli bir VM kurup Case'i buradan yürütme kararı aldım. Bu şekilde daha hızlı monitor edebilir veya her yerden Google hesabımla erişebilirim.</p>
 <p align="center">
   <img src="./img/gcp1.png" alt="Size Limit CLI" width="738">
 </p>  
