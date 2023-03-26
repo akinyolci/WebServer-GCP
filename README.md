@@ -81,7 +81,7 @@ Projede kullanılan dağıtımlar, eklentiler vb.:
 
 <h3 id="vm-kurma" align="justify"> GCP'de Sanal Makine Kurulumu <h3/>
 <p align="center">
-  <img src="./img/example.png" alt="Size Limit CLI" width="738">
+  <img src="./img/gcp1.png" alt="Size Limit CLI" width="738">
 </p>  
   
   
