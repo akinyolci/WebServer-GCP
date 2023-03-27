@@ -106,7 +106,7 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
  ```
   
   <p>Kurulumdan sonra çalıştıralım</p>
-  ```sh
+ ```sh
     sudo systemctl start apache2
   
  ```
