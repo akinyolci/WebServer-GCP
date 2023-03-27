@@ -86,7 +86,8 @@ Projede kullanılan dağıtımlar, eklentiler vb.:
   <img src="./img/gcp1.png" alt="Size Limit CLI" width="738">
 </p>  
 <p>
-Region ve Zone seçtikten sonra işletim sistemi olarak Linux'un Ubuntu dağıtımını seçiyorum.
+Region ve Zone seçtikten sonra işletim sistemi olarak Linux'un Ubuntu dağıtımını seçiyorum. Firewall ayarından http ve https isteklerini aktif ediyorum.
+Ve Sanal makineyi kuruyorum.  
 </p>
 <p align="center">
   <img src="./img/gcp2.png" alt="Size Limit CLI" width="738">
