@@ -87,7 +87,7 @@ Projede kullanılan dağıtımlar, eklentiler vb.:
 </p>  
 <p>
 Region ve Zone seçtikten sonra işletim sistemi olarak Linux'un Ubuntu dağıtımını seçiyorum. Firewall ayarından http ve https isteklerini aktif ediyorum.
-Ve Sanal makineyi kuruyorum.  
+Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerinden SSH bağlantısı kuruyorum. Sonrasında bu makineye web server kuracağım.
 </p>
 <p align="center">
   <img src="./img/gcp2.png" alt="Size Limit CLI" width="738">
