@@ -79,9 +79,9 @@ Projede kullanılan dağıtımlar, eklentiler vb.:
 <!-- Yol Haritası -->
 <h2 id="yol-haritasi"> :dart: Yol Haritası</h2>
 
-<h3 id="vm-kurma"> GCP'de Sanal Makine Kurulumu <h3/>
+<h3 id="vm-kurma"> GCP'de Sanal Makine Kurulumu :<h3/>
 <br>
-<p>Google Cloud ortamında Linux işletim sistemli bir VM kurup Case'i buradan yürütme kararı aldım. Bu şekilde daha hızlı monitor edebilir veya her yerden Google hesabımla erişebilirim.</p>
+<p>Google Cloud ortamında Linux işletim sistemli bir VM kurup Case'i buradan yürütme kararı aldım. Bu şekilde daha hızlı monitor edebilir veya her yerden Google hesabımla erişebilirim. </p>
 <p align="center">
   <img src="./img/gcp1.png" alt="Size Limit CLI" width="738">
 </p>  
@@ -93,17 +93,23 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
   <img src="./img/gcp2.png" alt="Size Limit CLI" width="738">
 </p> 
   
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
   
   
+<h3 id="apache"> Web Sunucusu Kurulumu :<h3/>  
   
+  <p> Web sunucusu olarak Apache tercih etmemin sebebi daha önce de php tabanlı sitelere baktığım için aşina olmam. Nginx ile de kurulabilirdi. Ben bu case için Apache2 Web sunucusunu tercih ettim. Apache kurmak için: </p>
   
+ ```sh
+    sudo apt-get install apache2
   
+ ```
   
+  <p>Kurulumdan sonra çalıştıralım</p>
+  ```sh
+    sudo systemctl start apache2
   
-  
-  
-  
-  
+ ```
  
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
