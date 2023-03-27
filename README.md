@@ -114,10 +114,6 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
- ```sh
-    $ npm run size
 
-      Package size: 30.08 kB with all dependencies, minified and gzipped
- ```
 
 
