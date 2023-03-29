@@ -154,5 +154,9 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
   
   <p>Şimdi sırada Lets' Encrypt ile SSL/TSL ayarlarını yapmak var. Bu konu için certbot kullanabiliriz. Apache için eklentisini de indiriyoruz.</p>
   
+  <p>Certbot'u yükleyelim</p>
   
+ ```sh
+    sudo apt-get install certbot
   
+ ```
