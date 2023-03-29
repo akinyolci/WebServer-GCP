@@ -139,3 +139,6 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
 <p align="center">
   <img src="./img/domain1.png"  width="738">
 </p> 
+  
+  
+<h3 id="ssl-tls"> SSL/TLS Şifreleme Kurulumu :<h3/> 
