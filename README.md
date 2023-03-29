@@ -83,14 +83,14 @@ Projede kullanılan dağıtımlar, eklentiler vb.:
 <br>
 <p>Google Cloud ortamında Linux işletim sistemli bir VM kurup Case'i buradan yürütme kararı aldım. Bu şekilde daha hızlı monitor edebilir veya her yerden Google hesabımla erişebilirim. </p>
 <p align="center">
-  <img src="./img/gcp1.png" alt="Size Limit CLI" width="738">
+  <img src="./img/gcp1.png"  width="738">
 </p>  
 <p>
 Region ve Zone seçtikten sonra işletim sistemi olarak Linux'un Ubuntu dağıtımını seçiyorum. Firewall ayarından http ve https isteklerini aktif ediyorum.
 Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerinden SSH bağlantısı kuruyorum. Sonrasında bu makineye web server kuracağım.
 </p>
 <p align="center">
-  <img src="./img/gcp2.png" alt="Size Limit CLI" width="738">
+  <img src="./img/gcp2.png"  width="738">
 </p> 
   
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -106,14 +106,36 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
  ```
   
   <p>Kurulumdan sonra çalıştıralım</p>
+  
  ```sh
     sudo systemctl start apache2
   
  ```
- 
-
+  <p>Apache'nin otomatik olarak başlatılmasını sağlayalım</p>
+  
+ ```sh
+    sudo systemctl enable apache2
+  
+ ```
+  
+  <p>Apache'nin durumunu kontrol edelim.</p>
+  
+ ```sh
+    sudo systemctl status apache2
+  
+ ```
+  
+<p align="center">
+  <img src="./img/apache1.png"  width="738">
+</p> 
+  
+  
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+<h3 id="domain"> Domain bağlama :<h3/> 
+  
+  <p>statik web sitesini görmemiz ve SSL/TLS ayarları için bir domain bağlamak istedim. Google Domains'te hazırda bulunan bir alanadının DNS ayarlarında bir A kaydı açarak sunucunun ip adresini ekledim.</p>
 
-
-
+<p align="center">
+  <img src="./img/domain1.png"  width="738">
+</p> 
