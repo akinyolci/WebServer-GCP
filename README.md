@@ -139,6 +139,20 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
 <p align="center">
   <img src="./img/domain1.png"  width="738">
 </p> 
+
+<p>Domaini bağladıktan bir süre sonra arama çubuğuna domain adresinimizi yazdığımızda suncumuzun çalıştığını görüyoruz.</p>
+
+<p align="center">
+  <img src="./img/domain2.png"  width="738">
+</p> 
   
+  
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
   
 <h3 id="ssl-tls"> SSL/TLS Şifreleme Kurulumu :<h3/> 
+  
+  <p>Şimdi sırada Lets' Encrypt ile SSL/TSL ayarlarını yapmak var. Bu konu için certbot kullanabiliriz. Apache için eklentisini de indiriyoruz.</p>
+  
+  
+  
