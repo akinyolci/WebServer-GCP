@@ -210,5 +210,9 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
     sudo ufw status
   
  ```
+ 
+  <p align="center">
+  <img src="./img/status1.png"  width="738">
+</p> 
   
     
