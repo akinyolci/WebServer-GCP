@@ -160,3 +160,55 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
     sudo apt-get install certbot
   
  ```
+  
+  <p> Certbot'un Apache2 eklentisini yükleyelim</p>
+    
+ ```sh
+    sudo apt-get install python3-certbot-apache
+  
+ ```
+  
+    <p> Şimdi ise sertifikanın yükleneceği domain adresimizi belirleyip aşağıdaki komutu çalıştıralım</p>
+    
+ ```sh
+    sudo certbot --apache -d freelancer.com -d www.freelancer.com
+  
+ ```
+  
+ 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+  
+<h3 id="guvenlik"> Güvenlik Duvarı Kuralları :<h3/>
+  
+ <p>Güvenlik duvarı kurmak için "UFW" (Uncomplicated Firewall) kullanabiliriz.</p>
+  
+ ```sh
+    sudo apt-get install ufw
+
+  
+ ```
+  
+ 
+  <p>Gelen http ve https trafiklerini açmak için aşağıdaki komutları çalıştıralım</p>
+  
+ ```sh
+    sudo ufw allow http
+    sudo ufw allow https
+  
+ ```
+  
+  <p>UFW'yi çalıştıralım</p>
+  
+ ```sh
+    sudo ufw enable
+  
+ ```
+ 
+  <p>UFW'nin durumunu kontrol edebiliriz.</p>
+  
+ ```sh
+    sudo ufw status
+  
+ ```
+  
+    
