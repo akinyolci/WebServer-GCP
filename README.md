@@ -18,8 +18,8 @@
         <li><a href="#domain">Domain Bağlama</a></li>
         <li><a href="#ssl-tls">SSL/TLS Şifreleme Kurulumu</a></li>
         <li><a href="#guvenlik">Güvenlik Duvarı Kuralları</a></li>
-        <li><a href="#kimlik-dogrulama">Kimlik Doğrulama</a></li>
         <li><a href="#backup">Yedekleme ve Geri Yükleme Mekanizması</a></li>
+        <li><a href="#kimlik-dogrulama">Kimlik Doğrulama</a></li>
         <li><a href="#performans-izleme">Performans ve Sağlık İzleme</a></li>
         <li><a href="#docker">Projeyi Dockerize Etme</a></li>
       </ul>
@@ -215,4 +215,14 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
   <img src="./img/status1.png"  width="738">
 </p> 
   
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h3 id="backup"> Yedekleme ve Geri Yükleme Mekanizması :<h3/>
+
+<p> Verileri yedeklemek için'rsync' kullanacağım. root yetkisine ihtiyaç duymaz,
+kopyalama sırasında dosyanın sahiplikleri gurubu veya izinlerini (chmod değerlerini)
+bozmadan diğer noktaya aktarabilir.</p>
+
+
+
     
