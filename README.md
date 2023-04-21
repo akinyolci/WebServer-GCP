@@ -171,7 +171,7 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
     <p> Şimdi ise sertifikanın yükleneceği domain adresimizi belirleyip aşağıdaki komutu çalıştıralım</p>
     
  ```sh
-    sudo certbot --apache -d freelancer.com -d www.freelancer.com
+    sudo certbot --apache -d freelancerkampi.com -d www.freelancerkampi.com
   
  ```
   
