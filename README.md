@@ -274,8 +274,29 @@ bozmadan diğer noktaya aktarabilir.</p>
  ```sh
     sudo nano /etc/apache2/mods-enabled/status.conf
  ```
-  
-  
+
+<p align="center">
+  <img src="./img/stats3.png"  width="738">
+</p> 
+
+<p> Yukarıdaki dosyada "Location" bloğu içine aşağıdaki satırlar yoksa eğer, ekleyelim </p>
+
+
+ ```sh
+    SetHandler server-status
+    Require local
+ ```
+
+<p> Tarayıcıda "www.alanadınız.com/server-status" açtığımızda göreceğiz. Ancak, Yukarıdaki conf dosyasında "Required Ip" kısmına kendi bilgisayarınız IP adresini yazmanız gerek. </p>
+
+
+
+<p> Dosyayı kaydedin ve Apache2'yi yeniden başlatalım </p>
+
+ ```sh
+    sudo systemctl restart apache2
+ ```
+
   
   
   
