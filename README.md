@@ -398,4 +398,28 @@ bozmadan diğer noktaya aktarabilir.</p>
     CMD ["apache2ctl", "-D", "FOREGROUND"]
 
  ```
-    
+ 
+  <p> Dockerfile dosyasını kaydedelim.</p>
+  <p>Terminalde Dockerfile'ın bulunduğu dizine gidelim.</p>
+  <p> Aşağıdaki komutu kullanarak Docker image'ını oluşturalım:</p>  
+  
+ ```sh
+    sudo docker build -t my_apache_server .
+ ```
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
