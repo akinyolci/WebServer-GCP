@@ -408,8 +408,14 @@ bozmadan diğer noktaya aktarabilir.</p>
  ```
  
  
-  
-  
+ <p> Bu şekilde sıfırdan bir VM kurup, istenilen tüm işlemleri gerçekleştirip, sonda da dockerize etmiş olduk. </p>
+ 
+  <p> Teşekkürler </p>
+  <a href="https://github.com/akinyolci/WebServer-GCP" class="button">Daha Fazla Bilgi</a>
+  <br>
+  <a href="mailto:akinyolcu0@gmail.com" class="button">Iletisim</a>
+  <br>
+  <a href="https://freelancerkampi.com" class"button"> Websitesi</a>
   
   
   
