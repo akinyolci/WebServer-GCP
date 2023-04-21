@@ -303,7 +303,18 @@ bozmadan diğer noktaya aktarabilir.</p>
 
 <p> Yukarıda da görüldüğü üzere sunucu durumumuzu izleyebiliyoruz. </p>
   
-  
+<p> "VAR/WWW/HTML" dizininde bir "index.html" dosyasını düzenleyip eğer yoksa oluşturup, Siteye girenlere örnek bir sayfa gösterelim. </p>
+
+ ```sh
+    cd VAR/WWW/HTML
+    sudo nano index.html
+ ```
+
+<p> Sitemizin Index sayfasını görüntüleyebiliriz artık </p>
+
+<p align="center">
+  <img src="./img/site1.png"  width="738">
+</p> 
   
   
     
