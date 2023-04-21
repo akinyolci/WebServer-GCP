@@ -168,8 +168,9 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
   
  ```
   
-    <p> Şimdi ise sertifikanın yükleneceği domain adresimizi belirleyip aşağıdaki komutu çalıştıralım</p>
+ <p> Şimdi ise sertifikanın yükleneceği domain adresimizi belirleyip aşağıdaki komutu çalıştıralım</p>
     
+  
  ```sh
     sudo certbot --apache -d freelancerkampi.com -d www.freelancerkampi.com
   
@@ -182,10 +183,9 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
   
  <p>Güvenlik duvarı kurmak için "UFW" (Uncomplicated Firewall) kullanabiliriz.</p>
   
+  
  ```sh
     sudo apt-get install ufw
-
-  
  ```
   
  
@@ -223,6 +223,44 @@ Ve Sanal makineyi kuruyorum. Makineyi kurduktan sonra direkt olarak GCP üzerind
 kopyalama sırasında dosyanın sahiplikleri gurubu veya izinlerini (chmod değerlerini)
 bozmadan diğer noktaya aktarabilir.</p>
 
+ ```sh
+    sudo apt-get install rsync
+ ```
+  
+  <p>
+  Yedeklemeleri tutacağımız dizini oluşturalım
+  </p>
+  
+ ```sh
+    sudo mkdir /backup
+ ```
 
-
+  <p>
+  Yedeklemeyi otomatikleştirmek için cron job oluşturalım
+  </p>
+  
+ ```sh
+    crontab -e
+ ``` 
+  
+ <p> dizini seçtikten sonra açılan dosyaya aşağıdaki kodu ekleyelim ki yedekleri alacağı yer belli olsun. </p>
+  
+ ```sh
+    0 1 * * * rsync -avz /var/www/html /backup/
+ ```
+ 
+ <p> Bu, her gün saat 1'de "/var/www/html" dizinindeki tüm dosyaları "/backup/" dizinine kopyalar. Dosyayı kaydedip, çıkalım. </p>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
