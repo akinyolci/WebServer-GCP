@@ -250,8 +250,45 @@ bozmadan diğer noktaya aktarabilir.</p>
  ```
  
  <p> Bu, her gün saat 1'de "/var/www/html" dizinindeki tüm dosyaları "/backup/" dizinine kopyalar. Dosyayı kaydedip, çıkalım. </p>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h3 id="kimlik-dogrulama"> Kimlik Doğrulama :<h3/>
   
-  
+<p> SSH erişimini güvence altına almak için "SSH key" tabanlı kimlik doğrulama kullanabiliriz. </p>
+<p> SSH anahtar çifti oluşturalım </p>
+
+ ```sh
+    ssh-keygen
+ ```
+
+<p> Oluşturulan "public key" dosyasını sunucuya kopyalayalım </p>
+
+ ```sh
+    ssh-copy-id kullanici_adiniz@server_ip_adresiniz
+ ```
+
+<p> Not: "user" ve "your_server_ip" bilgilerini sunucunuzun bilgileri ile değiştirin.
+SSH kimlik doğrulama yöntemlerini ayarlamak için "sshd_config" dosyasını açalım</p>
+
+
+ ```sh
+    sudo nano /etc/ssh/sshd_config
+ ```
+ 
+ <p> Aşağıdaki satırı bulun ve "no" yerine "yes" yazın </p>
+ 
+ ```sh
+    PasswordAuthentication no
+ ```
+ 
+  <p> Dosyayı kaydedip ssh servisini yeniden başlatalım </p>
+ 
+ ```sh
+    sudo systemctl restart sshd
+ ```
+ 
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <h3 id="performans-izleme"> Performans ve Sağlık İzleme :<h3/>
