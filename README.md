@@ -297,7 +297,11 @@ bozmadan diğer noktaya aktarabilir.</p>
     sudo systemctl restart apache2
  ```
 
-  
+<p align="center">
+  <img src="./img/stats4.png"  width="738">
+</p> 
+
+<p> Yukarıda da görüldüğü üzere sunucu durumumuzu izleyebiliyoruz. </p>
   
   
   
