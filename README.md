@@ -268,8 +268,8 @@ bozmadan diğer noktaya aktarabilir.</p>
     ssh-copy-id kullanici_adiniz@server_ip_adresiniz
  ```
 
-<p> Not: "user" ve "your_server_ip" bilgilerini sunucunuzun bilgileri ile değiştirin.
-SSH kimlik doğrulama yöntemlerini ayarlamak için "sshd_config" dosyasını açalım</p>
+<p> Not: "user" ve "your_server_ip" bilgilerini sunucunuzun bilgileri ile değiştirin.</p>
+<p> SSH kimlik doğrulama yöntemlerini ayarlamak için "sshd_config" dosyasını açalım</p>
 
 
  ```sh
