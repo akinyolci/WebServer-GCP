@@ -352,6 +352,50 @@ bozmadan diğer noktaya aktarabilir.</p>
 <p align="center">
   <img src="./img/site1.png"  width="738">
 </p> 
+ 
+ 
+ 
+ 
+ 
+ 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h3 id="docker"> Projeyi Dockerize Etme :<h3/>
   
+<p> Her şey tamamlandığına göre projemizi dockerize edebiliriz. </p>
+<p> Ubuntu işletim sistemi üzerine docker kuralım </p>
+ 
+ ```sh
+    sudo apt-get update
+    sudo apt-get install docker.io
+ ```  
+ 
+<p> Bu komutlar, Docker'ı resmi Ubuntu deposundan yükler. İlk komut depo bilgilerini günceller ve ikinci komut Docker'ı yükler. </p> <p> Kurulum işlemi tamamlandıktan sonra, Docker'ın doğru bir şekilde yüklendiğini doğrulamak için 'docker --version' komutunu çalıştırabiliriz. </p>
   
+ ```sh
+    docker --version
+ ```
+ 
+ 
+ <p> Dockerfile adlı bir dosya oluşturalım ve aşağıdaki kodları içine ekleyelim </p>
+ 
+  ```sh
+    # Dockerfile
+
+    # base image
+    FROM ubuntu:latest
+
+    # install necessary packages
+    RUN apt-get update && apt-get install -y apache2
+
+    # copy website files to container
+    COPY index.html /var/www/html/
+
+    # set container port
+    EXPOSE 80
+
+    # start apache in foreground
+    CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+ ```
     
