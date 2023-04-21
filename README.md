@@ -252,10 +252,28 @@ bozmadan diğer noktaya aktarabilir.</p>
  <p> Bu, her gün saat 1'de "/var/www/html" dizinindeki tüm dosyaları "/backup/" dizinine kopyalar. Dosyayı kaydedip, çıkalım. </p>
   
   
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h3 id="performans-izleme"> Performans ve Sağlık İzleme :<h3/>
   
+<p> Apache2'yi izlemek için "mod_status" eklentisini etkinleştirelim </p>
   
+ ```sh
+    sudo a2enmod status
+ ```  
+ 
+  <p> Apache2'yi yeniden başlatalım </p>
   
+ ```sh
+    sudo systemctl restart apache2
+ ``` 
   
+ 
+  <p> İzleme için "status" sayfasını yapılandıralım </p>
+  
+ ```sh
+    sudo nano /etc/apache2/mods-enabled/status.conf
+ ```
   
   
   
